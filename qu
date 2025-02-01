@@ -7,4 +7,24 @@ public class Test {// объявляется класс Test
       System.out.println("5 раз");
    }
 }
-праоа
+
+public class Test { // объявляется класс Test
+
+    public static void main(String[] args) {
+        try {
+            System.out.println("Hello world");
+            
+            // Пример операции, которая может вызвать исключение
+            int a = 10;
+            int b = 0;
+            int result = a / b; // Деление на ноль вызовет ArithmeticException
+            
+            System.out.println("Результат деления: " + result);
+        } catch (ArithmeticException e) {
+            // Обработка исключения
+            System.out.println("Произошла ошибка: " + e.getMessage());
+        }
+
+        System.out.println("5 раз");
+    }
+}
